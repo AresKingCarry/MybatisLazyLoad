@@ -59,10 +59,16 @@ Mybatis懒加载
   
   
   查询结果：
-  2018-03-08 16:24:50,341 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) main |- ==> Parameters: 
+  
+  
+  
 ######2018-03-08 16:24:50:344 | took 2ms | statement | connection 0
+
  SELECT * FROM orders;
-2018-03-08 16:24:50,483 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) main |- <==      Total: 3
+ 
+ 
+ 
+
 2018-03-08 16:24:50,484 DEBUG org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168) main |- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78e16155]
 2018-03-08 16:24:50,484 DEBUG org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327) main |- Returning JDBC Connection to DataSource
 ------------------------------------------------------
