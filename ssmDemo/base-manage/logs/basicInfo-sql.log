@@ -1,0 +1,155 @@
+######2018-03-08 15:13:29:438 | took 9ms | statement | connection 0
+ SELECT
+      u.*,
+      o.id as orders_id,
+      o.number ,
+      d.id as detail_id,
+      d.items_num,
+      i.id as items_id,
+      i.detail ,
+      i.`name`,
+      i.price
+    FROM
+        `user` u,
+        orders o,
+        orderdetail d,
+        items i
+    WHERE
+        u.id = o.user_id
+    AND o.id = d.orders_id
+    AND d.items_id = i.id;
+######2018-03-08 15:14:05:250 | took 5ms | statement | connection 0
+ SELECT
+      u.*,
+      o.id as orders_id,
+      o.number ,
+      d.id as detail_id,
+      d.items_num,
+      i.id as items_id,
+      i.detail ,
+      i.`name`,
+      i.price
+    FROM
+        `user` u,
+        orders o,
+        orderdetail d,
+        items i
+    WHERE
+        u.id = o.user_id
+    AND o.id = d.orders_id
+    AND d.items_id = i.id;
+######2018-03-08 15:15:25:408 | took 9ms | statement | connection 0
+ SELECT * FROM orders;
+######2018-03-08 15:15:25:591 | took 1ms | statement | connection 1
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:15:25:596 | took 0ms | statement | connection 2
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:15:25:601 | took 1ms | statement | connection 3
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 10;
+######2018-03-08 15:24:29:851 | took 1ms | statement | connection 0
+ SELECT * FROM orders;
+######2018-03-08 15:24:29:985 | took 0ms | statement | connection 1
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:24:29:988 | took 1ms | statement | connection 2
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:24:29:992 | took 0ms | statement | connection 3
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 10;
+######2018-03-08 15:31:33:595 | took 11ms | statement | connection 0
+ SELECT * FROM orders;
+######2018-03-08 15:31:46:913 | took 1ms | statement | connection 1
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:31:46:918 | took 0ms | statement | connection 2
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:31:46:926 | took 0ms | statement | connection 3
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 10;
+######2018-03-08 15:32:32:492 | took 1ms | statement | connection 0
+ SELECT * FROM orders;
+######2018-03-08 15:32:57:625 | took 5ms | statement | connection 1
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:32:57:639 | took 1ms | statement | connection 2
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 15:32:57:644 | took 1ms | statement | connection 3
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 10;
+######2018-03-08 16:24:50:344 | took 2ms | statement | connection 0
+ SELECT * FROM orders;
+######2018-03-08 16:26:53:244 | took 0ms | statement | connection 1
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 16:26:53:248 | took 0ms | statement | connection 2
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 1;
+######2018-03-08 16:26:53:252 | took 1ms | statement | connection 3
+ select 
+     
+    id, username, birthday, sex, address
+   
+    from user
+    where id = 10;
